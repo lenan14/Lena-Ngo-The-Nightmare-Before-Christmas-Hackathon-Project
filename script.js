@@ -12,34 +12,34 @@ const steps =
   1: 
   {
         story: 'Afraid to miss Christmas, you walked down a questionable path that laid next to you and soon reached the end, where an enormous door stood. A question suddenly popped up, "In the song "The Twelve Days of Christmas," what is given on the first day?" What do you choose?',
-        choices: [
-          {
-            text: "A partridge in a pear tree",
-            nextStep: 2
-          },
-          {
-            text: "A turtle dove",
-            nextStep: "end"
-          }
-        ]
+          choices: [
+            {
+              text: "A partridge in a pear tree",
+              nextStep: 2
+            },
+            {
+              text: "A turtle dove",
+              nextStep: "end"
+            }
+          ]
   },
   2: 
   {
-story: 'Relieved that you did not poof into thin air, you opened the door and realized you just walked into a toy factory! Out of the corner of your eye, you see your gingerbread man running away, giggling. You started to run after it, but an elf stopped you to ask the next question: "In Home Alone 2: Lost in New York, what are the names of the "wet bandits" who try to rob Kevin again?"',
-      choices: [
-        {
-          text: "Frank and Jim",
-          nextStep: "end"
-        },
-        {
-          text: "Harry and Marv",
-          nextStep: 3
-        }
-      ]
+        story: 'Relieved that you did not poof into thin air, you opened the door and realized you just walked into a toy factory! Out of the corner of your eye, you see your gingerbread man running away, giggling. You started to run after it, but an elf stopped you to ask the next question: "In Home Alone 2: Lost in New York, what are the names of the "wet bandits" who try to rob Kevin again?"',
+          choices: [
+          {
+            text: "Frank and Jim",
+            nextStep: "end"
+          },
+          {
+            text: "Harry and Marv",
+            nextStep: 3
+          }
+          ]
   },
   3: 
   {
-    story: 'You now found yourself at what seemed to be Santa Claus\'s workshop, and there he was, the troublesome gingerbread man was on Santa\'s seat! He told you that you must answer one last question before you could home. "What is the true meaning of Christmas?"',
+        story: 'You now found yourself at what seemed to be Santa Claus\'s workshop, and there he was, the troublesome gingerbread man was on Santa\'s seat! He told you that you must answer one last question before you could home. "What is the true meaning of Christmas?"',
           choices: [
             {
               text: "Being with loved ones and spreading Christmas cheer!",
@@ -50,13 +50,13 @@ story: 'Relieved that you did not poof into thin air, you opened the door and re
               nextStep: "end2"
             }
           ]
-    },
+  },
 
-  success: 
-  {
-    story: "Congratulations! The cheeky gingerbread man gave himself in and you were able to turn him back into a statue! You came home just in time to celebrate Christmas. Happy Holidays!",
-    choices: []
-  }
+        success: 
+        {
+          story: "Congratulations! The cheeky gingerbread man gave himself in and you were able to turn him back into a statue! You came home just in time to celebrate Christmas. Happy Holidays!",
+          choices: []
+        }
 };
 
 function startAdventure() 
@@ -102,7 +102,8 @@ function showStep(stepNum)
       }
     };
     choicesElement.appendChild(button);
-  });
+    });
+  }
 }
 
 function endGame()
@@ -149,5 +150,4 @@ function restartGame()
   
   startButton.style.display = 'block';
   startButton.onclick = startAdventure;
-}
 }
