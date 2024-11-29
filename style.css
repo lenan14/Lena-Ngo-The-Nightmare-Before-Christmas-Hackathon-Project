@@ -1,0 +1,41 @@
+body
+{
+  font-family: "Verdana", sans-serif;
+  color: #fff;
+  margin : 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image:      url(https://i.pinimg.com/originals/39/b9/4e/39b94e67b72156a364c7271805b25098.gif);
+}
+
+h1
+{
+  font-family: "Snowburst One", sans-serif;
+  color: #fff;
+}
+
+.game-container 
+{
+  text-align: center;
+  background-color: #834333;
+  padding : 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 5px solid #F5F5DC;
+}
+
+.hidden 
+{
+  display: none;
+}
+
+#options button 
+{
+  margin: 10px;
+  padding: 10px 20 px;
+  font-size: 16px;
+  cursor: pointer;
+}
